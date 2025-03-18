@@ -7,6 +7,20 @@ if true then return {
       colorscheme = "catppuccin",
     },
   },
+  {
+    "echasnovski/mini.pairs", enabled = false
+  },
+  {
+    "tpope/vim-fugitive"
+  },
+  {
+    "ibhagwan/fzf-lua",
+    opts = {
+      grep = {
+        no_ignore = true
+      }
+    }
+  }
 } end
 
 -- every spec file under the "plugins" directory will be loaded automatically by lazy.nvim
