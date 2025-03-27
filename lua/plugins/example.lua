@@ -16,7 +16,14 @@ if true then return {
   {
     "ibhagwan/fzf-lua",
     opts = {
+      "telescope",
+      winopts = {
+        preview = {
+          default = "bat"
+        }
+      },
       grep = {
+        rg_glob = true,
         no_ignore = true
       }
     }
