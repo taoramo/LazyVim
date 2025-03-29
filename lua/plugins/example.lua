@@ -27,7 +27,21 @@ if true then return {
         no_ignore = true
       }
     }
-  }
+  },
+  {
+    "neovim/nvim-lspconfig",
+    ---@class PluginLspOpts
+    opts = {
+      ---@type lspconfig.options
+      servers = {
+        -- pyright will be automatically installed with mason and loaded with lspconfig
+        pyright = {},
+        ruff = {
+          enabled = false
+        }
+      },
+    },
+  },
 } end
 
 -- every spec file under the "plugins" directory will be loaded automatically by lazy.nvim

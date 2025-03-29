@@ -4,3 +4,7 @@
 vim.g.snacks_animate = false
 vim.g.autoformat = false
 vim.g.lazyvim_picker = "fzf"
+
+-- vim.diagnostic.config({
+--   virtual_lines = true
+-- })
