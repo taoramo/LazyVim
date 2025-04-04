@@ -14,17 +14,17 @@ if true then return {
     "tpope/vim-fugitive"
   },
   {
-    "ibhagwan/fzf-lua",
+    "folke/snacks.nvim",
     opts = {
-      "telescope",
-      winopts = {
-        preview = {
-          default = "bat"
+      picker = {
+        hidden = true,
+        ignored = true,
+        sources = {
+          files = {
+            hidden = true,
+            ignored = true
+          }
         }
-      },
-      grep = {
-        rg_glob = true,
-        no_ignore = true
       }
     }
   },
@@ -32,9 +32,7 @@ if true then return {
     "neovim/nvim-lspconfig",
     ---@class PluginLspOpts
     opts = {
-      ---@type lspconfig.options
       servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
         pyright = {},
         ruff = {
           enabled = false

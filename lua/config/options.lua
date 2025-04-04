@@ -3,7 +3,7 @@
 -- Add any additional options here
 vim.g.snacks_animate = false
 vim.g.autoformat = false
-vim.g.lazyvim_picker = "fzf"
+vim.g.lazyvim_picker = "snacks"
 
 -- vim.diagnostic.config({
 --   virtual_lines = true
