@@ -4,8 +4,11 @@ if true then return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "tokyonight-night",
     },
+  },
+  {
+    "rebelot/kanagawa.nvim"
   },
   {
     "echasnovski/mini.pairs", enabled = false
