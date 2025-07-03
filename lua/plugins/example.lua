@@ -4,7 +4,7 @@ if true then return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight-night",
+      colorscheme = "catppuccin",
     },
   },
   {
@@ -39,6 +39,9 @@ if true then return {
         pyright = {},
         ruff = {
           enabled = false
+        },
+        jinja_lsp = {
+          filetypes = {"jinja", "jinja2", "j2"}
         }
       },
     },
