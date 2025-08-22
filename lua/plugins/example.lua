@@ -2,9 +2,13 @@
 -- stylua: ignore
 if true then return {
   {
+    "rose-pine/neovim",
+    name = "rose-pine"
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "rose-pine",
     },
   },
   {
@@ -41,7 +45,8 @@ if true then return {
           enabled = false
         },
         jinja_lsp = {
-          filetypes = {"jinja", "jinja2", "j2"}
+          enabled = false
+          -- filetypes = {"jinja", "jinja2", "j2"}
         }
       },
     },
